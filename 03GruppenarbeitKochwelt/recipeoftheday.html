@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/gif" href="img/favicon-16x16.png">
+    <script src="script.js"></script>
+
+</head>
+<body onload="includeHTML()">
+
+<div class="div-burger-menu">
+
+    <div class="menu-container">
+        <div class="menu">
+            <a class="logo_a" href="index.html"><img class="logo_header" src="img/logo.png"></a>
+        </div>
+    
+        <div class="menu-links">
+            <a  href="index.html">Start</a>
+            <a class="active" href="">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a class="impressum_menu_link" href="impressum.html">Impressum</a>
+        </div>
+        
+        <div class="menu-burger">  
+            <img onclick="showMenu()" class="burger-menu" src="bars-solid.svg" alt="">
+            
+                <div id="menu" class="overlay-menu">
+                    <a href="index.html">Start</a>
+                    <a href="recipeoftheday.html">Rezept des Tages</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="impressum.html">Impressum</a>
+                <div>  
+                    <button onclick="closeMenu()" class="close-button">Close</button>
+                </div> 
+            </div>
+        </div>
+
+    
+    </div>
+
+    <div class="seperator"></div>
+
+    <div class="recipe_of_the_day_container">
+        <div class="court_img_details">
+            <div class="headline_rotd">
+                <h2>Kaiserschmarrn</h2>
+            </div>
+            <div class="img_rotd">
+                <img class="rezept_img" src="img/kaiserschmarrn_img.jpg" alt="">
+            </div>
+            <div class="details_overview">
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/clock-regular.svg" alt="">
+                    <span>20 Min.</span>
+                </div>
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/brain-solid.svg" alt="">
+                    <span>simpel</span>
+                </div>
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/calendar-alt-regular.svg" alt="">
+                    <span>06.05.2023</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seperator_two"></div>
+
+    <div class="ingredients_overview">
+        <div class="servings">
+            <div class="servings_input_button">
+                <span>Zutaten für</span>
+                <input id="mengeAnzahl" class="servings_input" type="number" min="1" max="10" value="4" placeholder="Menge">
+                <button onclick="calculate_1()" class="servings-button" type="submit">Portionen</button>
+        </div>
+        </div>
+
+    <div class="ingredients">
+        <div class="individual_ingredients">
+            <table id="zutatTable" class="table">
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-1">4</span> Eier</td> 
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-2">100</span> g Mehl</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-3">100</span> ml Milch</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-4">1</span> Prise(n) Salz</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-5">1</span> TL Backpulver</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-6">40</span> g Zucker</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-7">80</span> g Rosinen</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-8">1</span> EL Puderzucker zum Bestreuen</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+    <div class="preparation">
+        <div class="prepartion_details">
+            <div class="headline_prepartion">
+                <h2>Zubereitung</h2>
+            </div>
+            <div class="preparation_details_overview">
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/clock-regular.svg" alt="">
+                    <span>ca. 20 Min.</span>
+                </div>
+                <div class="detail_img_span-2">
+                    <img class="details_img" src="img/icons/clock-regular.svg" alt="">
+                    <span>Gesamtzeit ca. 30 Minuten</span>
+                </div>
+            </div>
+            <div class="preparation_description">
+                <span><b>1. Schritt</b><br><br>4 Eier, 125g Mehl, 125ml Milch, 1 Prise Salz, 1 TL Backpulver, 40g Zucker<br>Eier trennen. Eigelb mit Mehl, Milch, Salz, Backpulver und Zucker zu einem glatten Teig verarbeiten und 10 Min. ruhen lassen.<br><br><b>2. Schritt</b><br><br> 4 Eiweiss, 80g Rosinen<br>Eiweisse zu einem stabilen Eischnee schlagen und vorsichtig unter den Teigen heben. Anschleissend die Rosinen hinzugeben.<br><br><b>3. Schritt</b><br><br>4 EL Butter, etwas Puderzucker<br>2 EL Butter in eine Pfanne geben und bei mittlerer Temperatur einen knusprigen Pfannkuchen braten. Den Pfannkuchen wenden und die restliche Butter hinzufügen. Nach dem backen den Pfannkuchen in Stücke reissen und mit dem Puderzucker bestreuen.</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="info">
+            <div class="info_headline_name">
+                <div class="info_headline">
+                    <h3>Rezept erstellt von</h3>
+                    <div class="img_name">
+                        <img class="img_profile" src="img/profile.png" alt="">
+                        <span>Thomas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="templates/footer.html"></div>
+
+</div>
+
+</body>
+</html>

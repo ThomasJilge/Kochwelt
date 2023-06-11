@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/gif" href="img/favicon-16x16.png">
+    <script src="script.js"></script>
+
+</head>
+<body onload="includeHTML()">
+
+<div class="div-burger-menu">
+
+    <div class="menu-container">
+        <div class="menu">
+            <a class="logo_a" href="index.html"><img class="logo_header" src="img/logo.png"></a>
+        </div>
+    
+        <div class="menu-links">
+            <a  href="index.html">Start</a>
+            <a class="active" href="">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a class="impressum_menu_link" href="impressum.html">Impressum</a>
+        </div>
+
+        <div class="menu-burger">  
+            <img onclick="showMenu()" class="burger-menu" src="bars-solid.svg" alt="">
+            
+                <div id="menu" class="overlay-menu">
+                    <a href="index.html">Start</a>
+                    <a href="recipeoftheday.html">Rezept des Tages</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="impressum.html">Impressum</a>
+                <div>  
+                    <button onclick="closeMenu()" class="close-button">Close</button>
+                </div> 
+            </div>
+        </div>
+        
+    
+    </div>
+
+    <div class="seperator"></div>
+
+    
+
+    <div class="recipe_of_the_day_container">
+        <div class="court_img_details">
+            <div class="headline_rotd">
+                <h2>Pizza vegetarisch</h2>
+            </div>
+            <div class="img_rotd">
+                <img class="rezept_img" src="img/pizza_img.jpg" alt="">
+            </div>
+            <div class="details_overview">
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/clock-regular.svg" alt="">
+                    <span>20 Min.</span>
+                </div>
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/brain-solid.svg" alt="">
+                    <span>simpel</span>
+                </div>
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/calendar-alt-regular.svg" alt="">
+                    <span>06.05.2023</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seperator_two"></div>
+
+    <div class="ingredients_overview">
+        <div class="servings">
+            <div class="servings_input_button">
+                <span>Zutaten für</span>
+                <input id="mengeAnzahl" class="servings_input" type="number" min="1" max="10" value="4" placeholder="Menge">
+                <button onclick="calculate_2()" class="servings-button" type="submit">Portionen</button>
+        </div>
+        </div>
+
+
+    <div class="ingredients">
+        <div class="individual_ingredients">
+            <table class="table">
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-1">400</span> g passierte Tomaten</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-2">2</span> TL Zucker</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-3">2</span> EL Olivenöl</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-4">2</span> TL Oregano</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-5">2</span> TL Rosmarin</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-6">2</span> Zehe(n) Knoblauch</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-7">2</span> Prise(n) Salz und Pfeffer</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-8">2</span> Pck.(n) Pizzateig</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-9">1</span> Zucchini</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-10">600</span> g geriebener Käse</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-11">1</span> g Auberginen</td>
+                </tr>
+                <tr>
+                    <td class="ingredientsQuantity"> <span id="tdZutat-12">60</span> g schwarze Oliven</td>
+                </tr>
+                <tr>
+                    <td class="td-1 ingredientsQuantity"> <span id="tdZutat-13">16</span> g Basilikum</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="preparation">
+        <div class="prepartion_details">
+            <div class="headline_prepartion">
+                <h2>Zubereitung</h2>
+            </div>
+            <div class="preparation_details_overview">
+                <div class="detail_img_span">
+                    <img class="details_img" src="img/icons/clock-regular.svg" alt="">
+                    <span>ca. 20 Min.</span>
+                </div>
+                <div class="detail_img_span-2">
+                    <img class="details_img" src="img/icons/clock-regular.svg" alt="">
+                    <span>Gesamtzeit ca. 40 Minuten</span>
+                </div>
+            </div>
+            <div class="preparation_description">
+                <span>Den Backofen auf 250°C (Ober-/Unterhitze) vorheizen. Die passierten Tomaten, Öl, Zucker, Kräuter und Knoblauch mit Salz und Pfeffer verrühren.<br><br>Den Teig auf ein Backblech legen und mit der Soße bestreichen. Das Gemüse und zuletzt den Käse reiben und darauf verteilen. Im Ofen 15 - 20 Min backen.</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="info">
+            <div class="info_headline_name">
+                <div class="info_headline">
+                    <h3>Rezept erstellt von</h3>
+                    <div class="img_name">
+                        <img class="img_profile" src="img/profile.png" alt="">
+                        <span>Thomas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="templates/footer.html"></div>
+
+</div>
+
+</body>
+</html>

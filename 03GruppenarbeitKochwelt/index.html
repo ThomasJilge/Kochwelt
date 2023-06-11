@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/gif" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="send_mail/send_mail.html">
+    <link rel="stylesheet" href="send_mail/send_mail.php">
+    <link rel="stylesheet" href="send_mail/success.html">
+    <script src="script.js"></script>
+
+</head>
+<body onload="includeHTML()">
+
+    <div class="div-burger-menu">
+
+    <div class="menu-container">
+        <div class="menu">
+            <a class="logo_a" href="index.html"><img class="logo_header" src="img/logo.png"></a>
+        </div>
+
+        <div class="menu-links">
+            <a class="active" href="">Start</a>
+            <a href="recipeoftheday.html">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a class="impressum_menu_link" href="impressum.html">Impressum</a>
+
+        </div>
+
+        <div class="menu-burger">  
+            <img onclick="showMenu()" class="burger-menu" src="bars-solid.svg" alt="">
+            
+                <div id="menu" class="overlay-menu">
+                    <a href="index.html">Start</a>
+                    <a href="recipeoftheday.html">Rezept des Tages</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="impressum.html">Impressum</a>
+                <div>  
+                    <button onclick="closeMenu()" class="close-button">Close</button>
+                </div> 
+            </div>
+        </div>
+           
+    </div>
+    <div class="seperator"></div>
+
+    <div class="recipe-container">
+        <div class="kaiserschmarrn-overview">
+            <div class="kaiserschmarrn-part">
+                <img class="kaiserschmarrn_img_start" src="img/kaiserschmarrn_img.jpg" alt="Croissant Bild">
+            </div>
+    
+            <div class="kaiserschmarrn-text">
+                <h2>Kaiserschmarrn</h2>
+                <span>Die Alpenküche ist voll kulinarischer Highlights – Kaiserschmarrn ist eines davon. Das klassische Kaiserschmarrn Rezept ist herrlich fluffig, luftig und schmeckt wie frisch duftender Original Kaiserschmarrn auf der Alm oder der Skihütte. Klassischer Kaiserschmarrn selber machen geht sehr einfach, es müssen nur ein paar Tipps beachtet werden.</span>
+                <a class="link_recipe_of_the_day" href="recipeoftheday.html">
+                    <button class="recipe-button" type="submit">Rezept öffnen</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="three_recipes_container">
+        <div class="headline">
+            <h2>Lust auf was Neues?</h2>
+        </div>
+        <div class="recipes-overview">
+            <div class="recipe-name">
+            <a href="recipeofthedaytwo.html"><img class="recipes-imgs" src="img/pizza_img.jpg"></a>
+            <span>Pizza vegetarisch</span>
+            </div>
+            <div class="recipe-name">
+            <a href="recipeofthedaythree.html"><img class="recipes-imgs" src="chicken-vegatable-recipe.jpeg"></a>
+            <span>Mediterranes Hähnchen-Gemüse</span>
+            </div>
+            <div class="recipe-name">
+            <a href="recipeofthedayfour.html"><img class="recipes-imgs" src="chili-con-carne.jpeg"></a>
+            <span>Chili con Carne ohne Bohnen</span>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="compare-container">
+        <div class="compare-headline">
+            <h2>Pfanne vs. Wok - Was ist besser?</h2>
+        </div>
+        <div class="compare-text-img">
+            <div class="compare-text">
+                <span>
+                    <b>Form:</b>
+                    <br>
+                    Der offensichtlichste und wichtigste Unterschied ist die Form. Ein Wok ist kugelig und es gibt keinen Unterschied zwischen dem Boden und der Wand. Der Boden einer Pfanne hingegen ist flach. Die Größe der Fläche des Bodens kann dabei variieren. Hohe Pfannen werden auch als Schmorpfannen bezeichnet. Damit ein Wok auch in Haushaltsküchen Verwendung finden kann, haben diese zwar eine kugelige Form, sind am Boden aber auch minimal abgeflacht, damit sie auf dem Herd stehen können.
+                    <br>
+                    <br>
+                    <b>Hinweis:</b>
+                    <br>
+                    Genau genommen ist ein Wok gleichzeitig auch eine Pfanne. Er unterscheidet sich jedoch von der Form und Nutzung stark von herkömmlichen Bratpfannen, weswegen hier oftmals unterschieden wird.
+                    <br>
+                    <br>
+                    <b>Temperatur:</b>
+                    <br>
+                    Eine Besonderheit beim Kochen mit einem Wok ist das Arbeiten mit sehr hohen Temperaturen. Während die optimale Temperatur im Wok bei 200 °C bis 250 °C liegt, liegt die ideale Temperatur für eine Bratpfanne deutlich darunter. In einer gewöhnlichen Pfanne sind Temperaturen von 140 °C bis 170 °C völlig ausreichend.
+                </span>
+            </div>
+            <div class="compare_img_center">
+                <img class="compare-img" src="img/wok.jpg" alt="">
+            </div>
+            </div>
+    
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1529 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.div-burger-menu {
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px 0px 150px;
+}
+
+.logo_a {
+    padding: 0;
+}
+
+.menu-links {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.menu-links .impressum_menu_link {
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.active {
+    color: #018001;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+}
+
+.menu-burger {
+    position: relative;
+}
+
+.burger-menu {
+    right: 16px;
+    width: 40px;
+    height: 45px;
+    top: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.overlay-menu {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transform: translateX(501px);
+    transition: all 225ms ease-in-out;
+    background-color: rgba(144, 140, 140, 0.846);
+}
+
+.show-overlay-menu {
+    transform: translateX(0);
+}
+
+.close-button {
+    right: 16px;
+    top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 120px;
+    height: 35px;
+    background-color: #018001;
+    color: white;
+    border: 1px solid #018001;;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}    
+
+.close-button:hover {
+    border-color: #018001;
+    box-shadow: 0 0 20px  #018001;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: #018001;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu a {
+    padding: 0;
+    font-weight: bold;
+}
+
+
+
+
+
+.seperator {
+    width: 100%;
+    box-shadow: 5px 7px 10px 1px rgba(0,0,0,0.4);
+    border-color: white;
+}
+
+/* HAUPTREZEPT */
+
+.croissant-text h2 {
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.recipe-container {
+    margin: 100px 150px;
+}
+
+.kaiserschmarrn-overview {
+    display: flex;
+    gap: 100px;
+}
+
+.kaiserschmarrn_img_start {
+    width: 750px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.kaiserschmarrn-text {
+    width: 100%;
+}
+
+.recipe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    width: 150px;
+    height: 38px;
+    background-color: #018001;
+    color: white;
+    border-color: #018001;
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.recipe-button:hover {
+    border-color: #018001;
+    box-shadow: 0 0 20px  #018001;
+}
+
+/* LUST AUF WAS NEUES */
+
+.three_recipes_container {
+    background-color: #EFEFEF;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    margin: 10px 150px 0px 150px;
+}
+
+.recipes-imgs {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.recipes-imgs:hover {
+    opacity: 0.5;
+}
+
+.recipe-name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recipe-name span {
+    padding-top: 10px;
+}
+
+.recipe-name a {
+    padding: 0;
+}
+
+/* VERGLEICH */
+
+.compare-headline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.compare-headline h2 {
+    margin-top: 20px;
+}
+
+.compare-text-img {
+    display: flex;
+    margin: 10px 150px 0px 150px;
+    padding-bottom: 100px;
+}
+
+.compare-text {
+    padding-top: 20px;
+}
+
+.compare-img {
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #413B3B;
+    height: 150px;
+}
+
+.logo_footer {
+    padding: 0;
+}
+
+.impressum {
+    margin: 10px 150px 20px 150px;
+}
+
+.impressum a {
+    color: blue;
+    font-size: 16px;
+}
+
+/* KONTAKTFORMULAR */
+
+.contact-container {
+    background-image: url(img/contact-background.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 20px;
+}
+
+.contact-form h2 {
+    color: white;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 38px;
+    background-color: #018001;
+    color: white;
+    border-color: #018001;
+    border: 1px solid #018001;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    border-color: #018001;
+    box-shadow: 0 0 20px  #018001;
+}
+
+input {
+    padding: 5px 0 5px 5px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+/* REZEPTE */
+
+.recipe_of_the_day_container {
+    display: flex;
+}
+
+.court_img_details {
+    margin: 50px 150px;
+    width: 100%;
+}
+
+.rezept_img {
+    width: 100%;
+    border-radius: 10px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.details_overview {
+    display: flex;
+    margin-top: 20px;
+}
+
+.detail_img_span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background-color: #EFEFEF;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0px 15px 0 15px;
+}
+
+.details_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.seperator_two {
+    height: 3px;
+    width: 100%;
+    background-color: #EFEFEF;
+    margin-bottom: 15px;
+}
+
+.ingredients_overview {
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px 15px 150px
+}
+
+.servings {
+    display: flex;
+    align-items: center;
+}
+
+.servings_span {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.servings_input_button {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.servings_input_button span {
+    padding-right: 10px;
+}
+
+.servings_input {
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+    height: 21.5px;
+    margin: 0;
+}
+
+.servings-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    background-color: #018001;
+    color: white;
+    border-color: #018001;
+    border: 1px;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.servings-button:hover {
+    border-color: #018001;
+    box-shadow: 0 0 20px  #018001;
+}
+
+.ingredients {
+    display: flex;
+}
+
+.individual_ingredients {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+td {
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.td-1  {
+    background-color: #EFEFEF;
+}
+
+.preparation {
+    display: flex;
+}
+
+.prepartion_details {
+    margin: 0px 150px 0px 150px;
+}
+
+.preparation_details_overview {
+    display: flex;
+}
+
+.detail_img_span-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background-color: #EFEFEF;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0px 15px 0px 15px;
+}
+
+.preparation_description {
+    margin: 20px 0px 20px 0px;
+}
+
+.info {
+    display: flex;
+}
+
+.info_headline_name {
+    display: flex;
+    margin: 0px 150px 50px 150px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.img_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.img_profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.privacy_social_imgs {
+    margin: 0px 150px 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.kochwelt_logo_small {
+    width: 65px;
+    height: 65px;
+}
+
+.privacy_info {
+    margin: 50px 150px 50px 150px;
+}
+
+.privacy_info a {
+    padding: 0;
+}
+
+.privacy {
+    color: white;
+    font-weight: bold;
+    padding: 0;
+}
+
+.privacy:hover {
+    color: #018001;
+    font-weight: 900;
+}
+
+.social_imgs_logos {
+    width: 50px;
+    height: 50px;
+}
+
+.second {
+    margin-left: 20px;
+}
+
+.third {
+    margin-left: 20px;
+}
+
+@media (max-width: 1680px) {
+
+    .recipe-button {
+        margin-top: 120px;
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    .recipe-button {
+        margin-top: 100px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+
+    .menu-links {
+        display: flex;
+    }
+
+    .menu-links a {
+        display: flex;
+        padding-right: 20px;
+    }
+
+    .recipe-button {
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 1410px) {
+
+    .kaiserschmarrn_img_start {
+        width: 600px;
+    }
+
+    .kaiserschmarrn-overview {
+        gap: 70px;
+    }
+
+    .recipe-button {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .recipe-button {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 1275px) {
+
+    .menu-links a {
+        display: flex;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    .recipe-button {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    .menu-links a {
+        font-size: 16px;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 480px;
+        height: 320px;
+    }
+
+    .kaiserschmarrn-overview {
+        gap: 40px;
+    }
+
+    .kaiserschmarrn-text h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .recipe-button {
+        margin-top: 25px;
+    }
+
+    .logo_header {
+        width: 300px;
+        height: 100px;
+    }
+
+    .recipe-button {
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 1101px) {
+
+    .menu-burger {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .menu-links {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .overlay-menu {
+        margin-left: 20px;
+    }
+
+    .kaiserschmarrn-overview {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .recipe-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .recipe-button {
+        margin-top: 20px;
+    }
+
+    .recipes-overview {
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+
+    .recipe-name span {
+        padding-bottom: 35px;
+    } 
+
+    .link_recipe_of_the_day {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .compare-text-img {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .compare_img_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 35px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .menu-container {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .recipe-container {
+        margin-left: 120px;
+        margin-right: 120px; 
+    }
+
+    .court_img_details {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .ingredients_overview {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .prepartion_details {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .kaiserschmarrn-overview {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 600px;
+    }
+
+    .compare-text-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compare-text {
+        padding-bottom: 25px;
+    }
+
+    .compare-img {
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .recipes-overview {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .recipe-name span {
+        padding-bottom: 35px;
+    } 
+
+    .info_headline_name {
+        margin-left: 120px;
+    }
+
+    .impressum {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .privacy_info {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+}
+
+@media (max-width: 815px) {
+
+    .menu-container {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .recipe-container {
+        margin-left: 90px;
+        margin-right: 90px; 
+    }
+
+    .ingredients_overview {
+        margin-left: 90px;
+        margin-right: 90px; 
+    }
+
+    .prepartion_details {
+        margin-left: 90px;
+        margin-right: 90px; 
+    }
+
+    .court_img_details {
+        margin-left: 90px;
+        margin-right: 90px; 
+    }
+
+    .servings_input_button span {
+        text-align: center;
+    }
+
+    .info_headline_name {
+        margin-left: 90px;
+    }
+
+    .impressum {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .privacy_info {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .menu-container {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .recipe-container {
+        margin-left: 60px;
+        margin-right: 60px; 
+    }
+
+    .court_img_details {
+        margin-left: 60px;
+        margin-right: 60px; 
+    }
+
+    .ingredients_overview {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .prepartion_details {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .info_headline_name {
+        margin-left: 60px;
+    }
+
+    .social_imgs {
+        display: flex;
+    }
+
+    .social_imgs_logos {
+        width: 40px;
+        height: 40px;
+    }
+
+    .impressum {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .privacy_info {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .menu-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .recipe-container {
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    .recipes-overview {
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    .court_img_details {
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    .compare-headline {
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    .compare-text-img {
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    .privacy_social_imgs {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .kochwelt_logo_small {
+        width: 35px;
+        height: 35px;
+    } 
+
+    .privacy_info {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .social_imgs_logos {
+        margin: 0;
+    } 
+
+    .first {
+        padding-right: 25px;
+    }
+
+    .third {
+        padding-left: 25px;
+    }
+
+    .detail_img_span  {
+        padding: 10px 15px 10px 15px;
+    }
+
+    .detail_img_span-2  {
+        padding: 10px 15px 10px 15px;
+    }
+
+    .ingredients_overview {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .prepartion_details {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .info_headline_name {
+        margin-left: 50px;
+        margin-right: 0;
+    }
+
+    .impressum {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .privacy_info {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .menu-container {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .recipe-container {
+        margin-left: 45px;
+        margin-right: 45px; 
+    }
+
+    .recipes-overview {
+        margin-left: 45px;
+        margin-right: 45px; 
+    }
+
+    .court_img_details {
+        margin-left: 45px;
+        margin-right: 45px; 
+    }
+
+    .compare-headline {
+        margin-left: 45px;
+        margin-right: 45px; 
+    }
+
+    .compare-text-img {
+        margin-left: 45px;
+        margin-right: 45px; 
+    }
+
+    .privacy_social_imgs {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .impressum {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .privacy_info {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 450px;
+        height: 290px;
+    }
+
+    .court_img_details {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .rezept_img {
+        width: 450px;
+        height: 280px;
+    }
+
+    .prepartion_details {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .info_headline_name {
+        margin-left: 45px;
+    }
+
+    .logo_header {
+        width: 270px;
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .menu-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .court_img_details {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .recipe-container {
+        margin-left: 40px;
+        margin-right: 40px; 
+    }
+
+    .privacy_info {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .rezept_img {
+        width: 420px;
+        height: 260px;
+    }
+
+    .detail_img_span {
+        margin-right: 25px;
+    }
+
+    .prepartion_details {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .info_headline_name {
+        margin-left: 40px;
+    }
+
+    .impressum {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .menu-container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .recipe-container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .recipes-overview {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .compare-headline {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .compare-text-img {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .privacy_social_imgs {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .impressum {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .privacy_info {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .privacy_info h2 {
+        font-size: 24px;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 400px;
+        height: 260px;
+    }
+
+    .contact-form {
+        width: 350px;
+        height: 450px;
+    }
+
+    .court_img_details {
+        margin: 50px 25px 50px 25px;
+    }
+
+    .rezept_img {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .details_overview {
+        flex-direction: column;
+    }
+
+    .details_overview .detail_img_span {
+        margin-bottom: 15px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .preparation_details_overview {
+        gap: 10px;
+    }
+
+    .prepartion_details {
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .detail_img_span  {
+        padding: 10px 15px 10px 15px;
+        margin: 0;
+    }
+
+    .detail_img_span-2  {
+        margin-right: 0;
+    }
+
+    .ingredients_overview {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .prepartion_details {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .info_headline_name {
+        margin-left: 25px;
+    }
+
+    .servings_input {
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .menu-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .recipe-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .recipes-overview {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .compare-text-img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .impressum {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .privacy_info {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .privacy_social_imgs {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 350px;
+        height: 230px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .compare-headline {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .contact-form {
+        width: 320px;
+        height: 420px;
+    }
+
+    .court_img_details {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ingredients_overview {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .prepartion_details {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .info_headline_name {
+        margin-left: 20px;
+    }
+
+    .logo_header {
+        width: 230px;
+        height: 80px;
+    }
+
+    .burger-menu {
+        width: 30px;
+    }
+
+    .social_imgs_logos {
+        width: 30px;
+        height: 30px;
+    }
+
+    .privacy {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .logo_header {
+        width: 200px;
+        height: 80px;
+    }
+
+    .burger-menu {
+        width: 20px;
+    }
+
+    .menu-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .compare-headline {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .recipe-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .recipes-overview {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 310px;
+        height: 180px;
+    }
+
+    .ingredients_overview {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .privacy_info h1 {
+        font-size: 26px;
+    }
+
+    .privacy_info h2 {
+        font-size: 18px;
+    }
+
+    .privacy_info h3 {
+        font-size: 17px;
+    }
+
+    .privacy_info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contact-form {
+        width: 300px;
+        height: 400px;
+    }
+
+    .court_img_details {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .prepartion_details {
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+
+    .info_headline_name {
+        margin-left: 10px;
+    }
+
+    .servings_input {
+        width: 100px;
+    }
+
+    .impressum {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .menu-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .kaiserschmarrn_img_start {
+        width: 285px;
+        height: 180px;
+    }
+
+    .recipe-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .recipes-overview {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .headline {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .compare-headline {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .compare-text-img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .privacy_info h1 {
+        font-size: 22px;
+    }
+
+    .privacy_info {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contact-form {
+        width: 280px;
+        height: 380px;
+    }
+
+    .court_img_details {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .ingredients_overview {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .impressum {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+.impressum_links {
+    display: flex;
+}
+
+.impressum_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.impressum_info_overview_1 {
+    padding-top: 20px;
+}
+
+.impressum_info_overview {
+    padding-bottom: 20px;
+}

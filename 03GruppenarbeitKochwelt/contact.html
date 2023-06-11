@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/gif" href="img/favicon-16x16.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="send_mail/send_mail.html">
+    <link rel="stylesheet" href="send_mail/send_mail.php">
+    <link rel="stylesheet" href="send_mail/success.html">
+
+</head>
+<body onload="includeHTML()">
+
+<div class="div-burger-menu">
+
+    <div class="menu-container">
+        <div class="menu">
+            <a class="logo_a" href="index.html"><img class="logo_header" src="img/logo.png"></a>
+        </div>
+    
+        <div class="menu-links">
+            <a href="index.html">Start</a>
+            <a href="recipeoftheday.html">Rezept des Tages</a>
+            <a class="active" href="">Kontakt</a>
+            <a class="impressum_menu_link" href="impressum.html">Impressum</a>
+        </div>
+        
+        <div class="menu-burger">  
+            <img onclick="showMenu()" class="burger-menu" src="bars-solid.svg" alt="">
+            
+                <div id="menu" class="overlay-menu">
+                    <a href="index.html">Start</a>
+                    <a href="recipeoftheday.html">Rezept des Tages</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="impressum.html">Impressum</a>
+                <div>  
+                    <button onclick="closeMenu()" class="close-button">Close</button>
+                </div> 
+            </div>
+        </div>
+
+    
+    </div>
+
+    <div class="contact-container">
+        
+        <form class="contact-form" action="http://gruppe-555.developerakademie.net/03GruppenarbeitKochwelt/send_mail/send_mail.php" method="POST">
+            <h2>Kontaktformular:</h2>
+            <div class="contact-vorname">
+                <input required type="text" name="vorname" placeholder="Vorname">
+            </div>
+            <div class="contact-nachname">
+                <input required type="text" name="nachname" placeholder="Nachname">
+            </div>
+            <div class="email">
+                <input required type="text" name="email" placeholder="Deine E-Mail Adresse">
+            </div>
+            <div class="textarea">
+                <textarea required name="text" placeholder="Deine Nachricht"></textarea>
+            </div>
+            <div class="button-form">
+            <button class="contact-button" type="submit">Absenden</button>
+            </div>    
+        </form>
+    </div>
+
+
+    <div w3-include-html="templates/footer.html"></div>
+    
+</div>
+
+</body>
+</html>
